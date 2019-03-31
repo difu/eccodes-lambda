@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  package36:
+    image: difu/eccodes_lambda
+    command: sh "create_deployment.sh"
+    working_dir: /deployment
+    volumes:
+      - './lambda:/lambda'
+      - './:/export'

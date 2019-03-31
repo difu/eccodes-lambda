@@ -1,0 +1,22 @@
+import traceback
+import sys
+ 
+from eccodes import *
+ 
+INPUT = '/path/to/grib_file.grb'
+VERBOSE = 1  # verbose error reporting
+ 
+ 
+def lambda_handler(event, context):
+    f = open(INPUT, 'rb')
+    while 1:
+        gid = codes_grib_new_from_file(f)
+        if gid is None:
+            break
+ 
+        # Do some useful stuff!
+ 
+        codes_release(gid)
+ 
+    f.close()
+ 
