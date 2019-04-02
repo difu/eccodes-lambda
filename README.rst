@@ -2,7 +2,7 @@
 eccodes-lambda
 ==============
 
-Create lambda deploymentpackage for `eccodes <https://software.ecmwf.int/wiki/display/ECC/ecCodes+Home>`_ from ECMFW.
+Create lambda deploymentpackage for `eccodes <https://software.ecmwf.int/wiki/display/ECC/ecCodes+Home>`_ from ECMWF.
 
 
 ================================
@@ -16,4 +16,4 @@ Quickstart
 - Implement your lambda function in the ``lambda/`` folder and install all dependencies in here
 - Run ``docker-compose run package36``
 - A file ``lambda.zip`` will be created that is ready to deploy to AWS Lambda
-- Set in your Lambda Environemt ``ECCODES_DEFINITION_PATH = ./definitions``
+- Set in your Lambda environment ``ECCODES_DEFINITION_PATH = ./definitions``
