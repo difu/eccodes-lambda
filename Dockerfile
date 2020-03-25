@@ -5,6 +5,11 @@ RUN yum -y install  \
     chrpath \
     gcc \
     git \
+    jasper-devel \
+    jasper-libs \
+    openjpeg2-tools \
+    openjpeg2-devel \ 
+    openjpeg2 \
     python36 \
     python36-pip \
     python36-devel \
